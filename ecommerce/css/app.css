@@ -1,47 +1,272 @@
 html{
     box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/
 }
 *,*:before, *.after {
   box-sizing: inherit;
 }
-
-h1{
-    font-size: 20;
-    color: blue;
+body{
+   
+    font-family:  'Releway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2; /*interliniado entre texto*/
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+    margin:  0 0 5rem 0;
 }
 h1 span{
     font-size:30;
     color: red;
 
 }
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 5rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
 
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
-.nombre-sitio{
-    margin-top: 100px;
-    margin-bottom: 100px;
+img{
+max-width: 100%;
+display: block;
+}
+
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition:  background-color .3s ease-in-out;
+
+}
+.btn:hover{
+    background-color: #698023;
+}
+
+
+
+/**Utilidades**/
+.text-center{
     text-align: center;
 }
 
+
+.nombre-sitio{
+    margin-top: 5rem;
+    text-align: center;
+
+}
+
 .nav-principal{
-    padding: 10px 0;
+    padding: 1rem 0;
     display: flex;
     justify-content:space-between;
     
 }
 
 .contenedor-navegacion{
-    border-top:  1px solid #e1e1e1;
+    border-top:  .1rem solid #e1e1e1;
 }
 
 .hero{
 background-image: url('../images/principal.jpg');
-height: 550px;
+height: 55rem;
 background-repeat: no-repeat;
 background-size: cover;
+background-position: center center;
 
 }
 
+
+/**Categprias**/
+.categorias{
+    padding-top: 5rem;
+}
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem; /**sepacioón**/
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display:block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+background-color: #037bc0;
+color: #fff;
+border-bottom-right-radius: 1rem;
+}
+
+
+/**Sobre nosotros**/
+
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%,#037bc0 50%, #037bc0 100%),
+    url("../images/nosotros.jpg");
+    background-position: left center;
+    padding: 10rem, 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+column-gap: 4rem;
+}
+.texto-nosotros{
+    grid-column: 2/3;
+    color: #ffffff;
+
+
+}
+
+
+/**LISTADO PRODUCTOS**/
+
+.contenido-principal{
+    padding-top: 5rem;
+}
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6,1rf);
+    grid-column-gap: 2rem;
+    grid-row-gap:2rem;
+}
+
+.producto:nth-child(1){
+    display: grid;
+    grid-column: 1/7;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img{
+height: 43rem;
+width: 100rem;
+object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column-start:1;
+    grid-column-end:4;
+}
+.producto:nth-child(2) img{
+    height: 30rem;
+    width: 100rem;
+    object-fit: cover;
+    }
+.producto:nth-child(3){
+    grid-column-start:4;
+    grid-column-end:7;
+}
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100rem;
+    object-fit: cover;
+    }
+.producto:nth-child(4){
+    grid-column-start:1;
+    grid-column-end:3;
+}
+.producto:nth-child(4) img{
+    height: 30rem;
+    width: 100rem;
+    object-fit: cover;
+    }
+.producto:nth-child(5){
+    grid-column-start:3;
+    grid-column-end:5;
+}
+.producto:nth-child(5) img{
+    height: 30rem;
+    width: 100rem;
+    object-fit: cover;
+    }
+.producto:nth-child(6){
+    grid-column-start:5;
+    grid-column-end:7;
+}
+.producto:nth-child(6) img{
+    height: 30rem;
+    width: 100rem;
+    object-fit: cover;
+    }
+
+
+.producto{
+    background-color: #037bc0;
+}
+.texto-producto{
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.texto-producto h3{
+    margin: 0;
+}
+
+.texto-producto p{
+     margin: 0 0 .5rem 0;
+}
+
+
+.texto-producto .precio{
+font-size: 2.8rem;
+font-weight: 900;
+}
+
+/**site footer**/
+
+.site-footer{
+    border-top: 1px solid  #e1e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.site-footer h3{
+margin-bottom: .5rem;
+font-size: 3rem ;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.footer-menu a{
+    display: block;
+}
+.copyright{
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #037bc0;
+    margin-bottom:0px ;
+    color: #e1e1e1;
+}
