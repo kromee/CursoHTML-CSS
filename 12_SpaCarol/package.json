@@ -18,7 +18,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "postcss": "^8.3.6",
+    "postcss": "^8.5.23",
     "sass": "^1.37.5"
   },
   "browserslist": [
