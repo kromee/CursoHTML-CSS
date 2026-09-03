@@ -19,7 +19,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "postcss": "^8.5.23",
-    "sass": "^1.37.5"
+    "sass": "^1.103.1"
   },
   "browserslist": [
     "last 1 version",
@@ -267,7 +267,7 @@
     "imagemin-optipng": "^7.1.0",
     "imagemin-svgo": "^7.1.0",
     "imagemin-webp": "^5.1.0",
-    "immutable": "^4.1.0",
+    "immutable": "^5.1.9",
     "import-lazy": "^3.1.0",
     "indent-string": "^2.1.0",
     "inflight": "^1.0.6",
