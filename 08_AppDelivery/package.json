@@ -519,7 +519,7 @@
     "semver-truncate": "^1.1.2",
     "set-blocking": "^2.0.0",
     "set-value": "^2.0.1",
-    "sharp": "^0.30.3",
+    "sharp": "^0.35.4",
     "shebang-command": "^1.2.0",
     "shebang-regex": "^1.0.0",
     "side-channel": "^1.0.4",
