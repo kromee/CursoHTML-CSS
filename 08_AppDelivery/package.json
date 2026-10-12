@@ -257,7 +257,7 @@
     "has-values": "^1.0.0",
     "homedir-polyfill": "^1.0.3",
     "hosted-git-info": "^2.8.9",
-    "http-cache-semantics": "^3.8.1",
+    "http-cache-semantics": "^4.3.0",
     "human-signals": "^2.1.0",
     "ieee754": "^1.2.1",
     "ignore": "^5.2.0",
